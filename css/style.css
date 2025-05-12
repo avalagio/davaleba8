@@ -1,0 +1,181 @@
+/* savarjisho 1 */
+.conteiner1 {
+    padding-top: 50px;
+    padding-left: 440px;
+    padding-bottom: 100px;
+    height: 300px;
+    background-color: yellow;
+}
+.task1 {
+
+    color: white;
+    background-color:pink;
+    padding: 50px;
+    width: 400px;
+    height: 150px;
+    font-size: 30px;
+    border: none;
+    text-align: center;
+    letter-spacing: 5px;
+    border-radius: 30px;
+    box-shadow: inset 10px 10px 5px 5px white,10px 10px 5px 5px black;
+    text-shadow: 3px 3px 2px black;
+}
+.task1:active {
+    box-shadow: inset 10px 10px 5px 5px black ,10px 10px 5px 5px white ;
+    text-shadow: 1px 1px 2px black;
+}
+/* savarjisho 2*/
+.karta {
+margin: auto;
+padding: 20px;
+width: 260px;
+transition: 1s ease;
+
+}
+
+
+.karta_h2 {
+    font-size: 20px;
+}
+.karta_h3 {
+    color: crimson;
+    
+}
+.add {
+    border: none;
+    border-radius: 10px;
+    background-color: green;
+    padding: 10px 10px;
+   
+}
+.karta:hover {
+    transform: scale(1.5);
+    overflow: hidden ;
+    box-shadow: 0px 0px 2px 2px red , 0px 0px 5px 5px rgb(185, 9, 9) , 0px 0px 8px 8px rgb(77, 1, 1);
+}
+.poto:hover {
+    filter: grayscale(100%);
+}
+
+
+/* savarjisho 3 */
+.text {
+    padding: 100px;
+    margin: auto;
+    text-align: center;
+    font-size: 140px;
+    color: red;
+    letter-spacing: 20px;
+    animation: anteba 0.5s linear infinite alternate ;
+}
+
+ @keyframes anteba {
+    0% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+    }
+    
+ }
+
+/* savarjisho 4 */
+.spinner_div {
+    position: relative;
+    height: 300px;
+    width: 300px;
+}
+.spinner {
+    animation: spinner 1s linear infinite forwards;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 30px solid;
+    border-left: 30px solid red;
+    border-right: 30px solid green;
+    border-bottom: 30px solid yellow;
+}
+.spinner_text {
+    position: absolute;
+    top: -140px;
+    margin: auto;
+    text-align: center;
+    font-size:30px;
+    color:green;
+
+}
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    
+}
+.spinner:hover {
+    animation-play-state: paused;
+}
+
+/* savarjisho 5 */
+header {
+    width: 100%;
+    margin: auto;
+    background-color: #2A9D8F;
+    padding: 100px ;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+.header_nav{
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+
+
+}
+.header_text {
+    color: white;
+    text-shadow: 3px 3px 5px  black;
+    transition: all 1s ;
+}
+.header_li  {
+    display: inline-block;
+    font-size: 30px;
+
+}
+.header_middle_li {
+    margin-inline:80px;
+}
+.header_text:hover {
+    text-shadow: 0px 0px 2px 2px purple , 0px 0px 5px rgb(118, 32, 118) , 0px 0px 8px rgb(63, 3, 63);
+}
+
+
+/* savarjisho 6 */
+.mwvane {
+    padding-top: 100px;
+    background-color: green;
+    width: 100%;
+    height: 300px;
+
+}
+.lurji {
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    animation: avseba 2s linear 1 forwards;
+}
+
+@keyframes avseba {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 80%;
+    }
+}
